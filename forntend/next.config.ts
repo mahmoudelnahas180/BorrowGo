@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+const nextIntlPlugin = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  reactCompiler: false,
 };
 
-export default nextConfig;
+export default nextIntlPlugin(nextConfig);

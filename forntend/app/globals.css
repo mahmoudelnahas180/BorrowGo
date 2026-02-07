@@ -1,26 +1,74 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .btn {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-lg transition-colors hover:bg-blue-600;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* إضافة خطوط عربية افتراضية للـ RTL */
+[dir="rtl"] {
+  font-family: var(--font-cairo), sans-serif;
+}
+/* Light Mode Colors */
+@theme {
+  /* Background Colors */
+  --color-bg: #f9fafb; /* اللون الرئيسي لخلفية الصفحة */
+  --color-surface: #ffffff; /* لون السطح العام (مثلاً خلف محتوى أو sections) */
+  --color-card: #ffffff; /* لون الكروت أو البطاقات */
+
+  /* Text Colors */
+  --color-text-primary: #111827; /* اللون الأساسي للنصوص */
+  --color-text-secondary: #4b5563; /* اللون للنصوص الثانوية */
+  --color-text-muted: #9ca3af; /* لون للنصوص الخافتة أو الغير رئيسية */
+
+  /* Border Colors */
+  --color-border: #e5e7eb; /* لون الحدود بين العناصر */
+
+  /* Button Colors */
+  --color-button-primary: #f97316; /* لون الزر الرئيسي */
+  --color-button-primary-hover: #ea580c; /* لون الزر عند المرور عليه بالفأرة */
+  --color-button-text: #ffffff; /* لون نص الزر */
+  --color-button-border: #f97316; /* لون حدود الزر */
+  /* blue -500 color */
+  --color-button-secondary: #3b82f6; /* لون الزر الثانوي */
+  --color-button-secondary-hover: #2563eb; /* لون الزر الثانوي عند المرور عليه بالفأرة */
+  --color-button-secondary-text: #ffffff; /* لون نص الزر الثانوي */
+  --color-button-secondary-border: #3b82f6; /* لون حدود الزر الثانوي */
+
+  /* Status Colors */
+  --color-success: #22c55e; /* اللون عند نجاح عملية */
+  --color-warning: #f59e0b; /* اللون عند تحذير */
+  --color-error: #ef4444; /* اللون عند خطأ */
+  --color-info: #3b82f6; /* اللون للمعلومات أو التنبيهات */
+  /* active link */
+  --color-link-active: #f97316;
+}
+
+/* Dark Mode Colors */
+.dark {
+  /* Background Colors */
+  --color-bg: #010610; /* خلفية الصفحة في الوضع الداكن */
+  --color-surface: #1e293b; /* لون السطح العام في الوضع الداكن */
+  --color-card: #1f2937; /* لون الكروت في الوضع الداكن */
+
+  /* Text Colors */
+  --color-text-primary: #f9fafb; /* اللون الأساسي للنصوص الداكنة */
+  --color-text-secondary: #cbd5e1; /* اللون للنصوص الثانوية الداكنة */
+  --color-text-muted: #94a3b8; /* اللون للنصوص الخافتة في الوضع الداكن */
+
+  /* Border Colors */
+  --color-border: #334155; /* لون الحدود في الوضع الداكن */
+
+  /* Button Colors */
+  --color-button-primary: #f97316; /* لون الزر الرئيسي (ثابت) */
+  --color-button-primary-hover: #fb923c; /* لون الزر عند المرور عليه في الداكن */
+  --color-button-text: #ffffff; /* لون نص الزر */
+
+  /* Status Colors */
+  --color-success: #4ade80; /* اللون عند نجاح العملية في الداكن */
+  --color-warning: #fbbf24; /* اللون عند تحذير في الداكن */
+  --color-error: #f87171; /* اللون عند خطأ في الداكن */
+  --color-info: #60a5fa; /* اللون للمعلومات أو التنبيهات في الداكن */
+  /* active link */
+  --color-link-active: #f97316;
 }

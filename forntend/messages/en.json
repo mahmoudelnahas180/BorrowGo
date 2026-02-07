@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "signup": "Signup",
+    "logo": "BorrowGo",
+    "register": "Register",
+    "lang": "English",
+    "allCategories": "All Categories",
+    "language": "arabic"
+  }
+}
