@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
- darkMode: "class",
+  darkMode: "class", // لتفعيل dark mode باستخدام class
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,15 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-        colors: {
-            primary: '#ff0000',
-            secondary: '#00ff00',
-            tertiary: '#0000ff',
-            quaternary: '#ff00ff',
-            darkBg: '#121212',
-        },
+      colors: {},
     },
   },
   plugins: [],
 };
+
 export default config;

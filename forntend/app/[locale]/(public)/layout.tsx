@@ -1,3 +1,5 @@
+import UnLoginHeader from "@/components/Header/UnLoginHeader";
+
 export default function UnauthLayout({
   children,
 }: {
@@ -5,7 +7,7 @@ export default function UnauthLayout({
 }) {
   return (
     <>
-      <div className="w-full h-50 bg-red-500 dark:bg-gray-800">fff</div>
+      <UnLoginHeader />
       {children}
     </>
   );
