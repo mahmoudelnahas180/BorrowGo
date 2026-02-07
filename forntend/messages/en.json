@@ -13,5 +13,11 @@
     "lang": "English",
     "allCategories": "All Categories",
     "language": "arabic"
+  },
+  "HeroSection": {
+    "heroTitle": "Rent professional equipment",
+    "heroDescription": "BorrowGo is a platform for exchanging goods and services between users",
+    "searchPlaceholder": "What are you looking for?",
+    "searchButton": "Search"
   }
 }
