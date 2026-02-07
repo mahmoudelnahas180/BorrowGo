@@ -1,8 +1,12 @@
 import React from "react";
-import ColorMockup from "@/components/testColor";
+import HeroSection from "@/components/HeroSection";
 
 const Home: React.FC = () => {
-  return <>{/* <ColorMockup /> */}</>;
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 };
 
 export default Home;

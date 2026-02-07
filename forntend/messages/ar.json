@@ -13,5 +13,18 @@
     "lang": "العربية",
     "allCategories": "كل الفئات",
     "language": "الانجليزية "
+  },
+  "HeroSection": {
+    "heroTitle": "استأجر معدات احترافية",
+    "heroDescription": "خد وارجع هو منصة لتبادل السلع والخدمات بين المستخدمين",
+    "searchPlaceholder": "ما الذي تبحث عنه؟",
+    "searchButton": "بحث"
+  },
+  "Categories": {
+    "title": "الفئات المميزة",
+    "description": "تصفح جميع الفئات المتاحة",
+    "viewAll": "عرض الكل",
+    "category": "الفئة",
+    "viewMore": "عرض المزيد"
   }
 }
