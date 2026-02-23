@@ -12,9 +12,9 @@
 /* Light Mode Colors */
 @theme {
   /* Background Colors */
-  --color-bg: #f9fafb; /* اللون الرئيسي لخلفية الصفحة */
-  --color-surface: #ffffff; /* لون السطح العام (مثلاً خلف محتوى أو sections) */
-  --color-card: #ffffff; /* لون الكروت أو البطاقات */
+  --color-bg: #f3f4f6; /* Gray 100 */
+  --color-surface: #ffffff; /* White */
+  --color-card: #ffffff;
 
   /* Text Colors */
   --color-text-primary: #111827; /* اللون الأساسي للنصوص */
