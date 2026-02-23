@@ -1,4 +1,5 @@
 import UnLoginHeader from "@/components/Header/UnLoginHeader";
+import Footer from "@/components/Footer";
 
 export default function UnauthLayout({
   children,
@@ -9,6 +10,7 @@ export default function UnauthLayout({
     <>
       <UnLoginHeader />
       {children}
+      <Footer />
     </>
   );
 }

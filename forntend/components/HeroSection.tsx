@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="my-4">
       <div
-        className="
+        className="container mx-auto
   mx-4 sm:mx-6 lg:mx-auto
   lg:w-[90%]
   w-auto

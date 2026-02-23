@@ -49,7 +49,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} dir={direction} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased bg-bg`}
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>{children}</ThemeProvider>

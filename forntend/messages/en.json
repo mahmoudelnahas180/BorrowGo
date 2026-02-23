@@ -19,5 +19,75 @@
     "heroDescription": "BorrowGo is a platform for exchanging goods and services between users",
     "searchPlaceholder": "What are you looking for?",
     "searchButton": "Search"
+  },
+  "Categories": {
+    "title": "Featured Categories",
+    "description": "Browse all available categories",
+    "viewAll": "View All",
+    "category": "Category",
+    "viewMore": "View More"
+  },
+  "categorieObject": {
+    "name": "Heavy Equipment",
+    "image": "Heavy Equipment",
+    "example": "Heavy Equipment, Cranes, Tractors"
+  },
+  "ToolCard": {
+    "bookNow": "Book Now",
+    "viewMore": "View More"
+  },
+  "Footer": {
+    "description": "BorrowGo is a platform for exchanging goods and services between users. Rent professional equipment easily and safely.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "categories": "Categories",
+    "heavyEquipment": "Heavy Equipment",
+    "tools": "Tools",
+    "contactUs": "Contact Us",
+    "email": "info@borrowgo.com",
+    "phone": "+20 123 456 789",
+    "address": "123 Street Name, Cairo, Egypt",
+    "copyright": "© {year} BorrowGo. All rights reserved."
+  },
+  "HowItWorks": {
+    "title": "How it works",
+    "step1": "Search for Equipment",
+    "desc1": "Browse our comprehensive catalog to find exactly what you need.",
+    "step2": "Book Online",
+    "desc2": "Select your dates and book immediately with secure payment.",
+    "step3": "Get it Delivered",
+    "desc3": "We deliver the equipment directly to your job site, on time."
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or need assistance? Our team is here to help you!",
+    "name": "Full Name",
+    "email": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "infoTitle": "Contact Information",
+    "address": "123 Street Name, Cairo, Egypt",
+    "phone": "+20 123 456 789",
+    "emailInfo": "info@borrowgo.com",
+    "hours": "Working Hours",
+    "hoursDetail": "Mon - Fri: 9:00 AM - 6:00 PM"
+  },
+  "AboutPage": {
+    "title": "About BorrowGo",
+    "subtitle": "Your trusted partner for professional equipment rental and exchange.",
+    "missionTitle": "Our Mission",
+    "missionContent": "To empower professionals and individuals by providing a seamless, secure, and efficient platform for renting and exchanging high-quality equipment.",
+    "visionTitle": "Our Vision",
+    "visionContent": "To become the leading global community for collaborative consumption, where every tool and resource is shared sustainably.",
+    "whyTitle": "Why Choose BorrowGo?",
+    "reason1Title": "Verified Quality",
+    "reason1Desc": "All equipment on our platform is inspected for quality and safety.",
+    "reason2Title": "Secure Payments",
+    "reason2Desc": "Transactional security is our top priority for both lenders and borrowers.",
+    "reason3Title": "Wide Network",
+    "reason3Desc": "Access a diverse range of equipment from a local community of trusted users."
   }
 }
