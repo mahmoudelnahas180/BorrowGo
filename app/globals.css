@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/* إضافة خطوط عربية افتراضية للـ RTL */
+[dir="rtl"] {
+  font-family: var(--font-cairo), sans-serif;
+}
+
+/* ========================================
+   MATERIAL DESIGN 3 - NILEMART COLOR SYSTEM
+   ======================================== */
+
+/* Light Mode - Default */
+@theme {
+  /* ============= PRIMARY: NILE BLUE ============= */
+  --color-primary: #1a5fa0; /* Primary 500 - Base */
+  --color-primary-900: #002045; /* Primary 900 - Deep Navy */
+  --color-primary-600: #0a4c8f; /* Primary 600 - Medium Blue */
+  --color-primary-50: #f0f4f9; /* Primary 50 - Subtle Background */
+
+  /* ============= SECONDARY: SUNSET GOLD ============= */
+  --color-secondary: #eb7e24; /* Secondary 500 - Base */
+  --color-secondary-900: #875200; /* Secondary 900 - Burnt Orange */
+  --color-secondary-100: #fde8d6; /* Secondary 100 - Highlight Background */
+
+  /* ============= SURFACE & NEUTRAL SYSTEM ============= */
+  --color-surface: #fffbfe; /* Base background */
+  --color-surface-container: #f3edf8; /* Cards and sections */
+  --color-outline: #79747e; /* Standard borders */
+  --color-outline-variant: #cac4d0; /* Subtle dividers */
+
+  /* ============= FUNCTIONAL COLORS ============= */
+  --color-success: #1b8c4f; /* Confirmations, active states */
+  --color-error: #ba1a1a; /* Rejections, critical alerts */
+  --color-warning: #f57f17; /* Pending actions, low stock */
+  --color-tertiary: #666699; /* Neutral-cool secondary groupings */
+  --color-info: #1a5fa0; /* Info/Additional context */
+
+  /* ============= TEXT HIERARCHY ============= */
+  --color-text-primary: #002045; /* Primary text - Nile Blue 900 */
+  --color-text-secondary: #475569; /* Secondary text */
+  --color-text-muted: #79747e; /* Muted/Disabled text - Outline */
+
+  /* ============= BACKGROUNDS ============= */
+  --color-bg: #f0f4f9; /* Page background - Primary 50 */
+  --color-card: #fffbfe; /* Card background - Surface */
+
+  /* ============= BORDERS ============= */
+  --color-border: #cac4d0; /* Standard borders - Outline Variant */
+
+  /* ============= BUTTON COLORS ============= */
+  --color-button-primary: #1a5fa0; /* Primary button - Nile Blue 500 */
+  --color-button-primary-hover: #0a4c8f; /* Hover state - Nile Blue 600 */
+  --color-button-primary-text: #ffffff;
+  --color-button-primary-border: #1a5fa0;
+
+  --color-button-secondary: #eb7e24; /* Secondary button - Sunset Gold 500 */
+  --color-button-secondary-hover: #875200; /* Hover state - Gold 900 */
+  --color-button-secondary-text: #ffffff;
+  --color-button-secondary-border: #eb7e24;
+
+  /* ============= ACTIVE/FOCUS STATES ============= */
+  --color-link-active: #1a5fa0; /* Active links - Primary 500 */
+}
+
+/* Dark Mode */
+.dark {
+  /* ============= PRIMARY: NILE BLUE (ADJUSTED FOR DARK) ============= */
+  --color-primary: #a8d5ff; /* Light blue for dark mode */
+  --color-primary-900: #f0f4f9; /* Primary 50 for dark backgrounds */
+  --color-primary-600: #7fb3e8; /* Lighter blue for dark mode */
+  --color-primary-50: #002045; /* Deep navy for contrast */
+
+  /* ============= SECONDARY: SUNSET GOLD (ADJUSTED FOR DARK) ============= */
+  --color-secondary: #ffb366; /* Light gold for dark mode */
+  --color-secondary-900: #fde8d6; /* Secondary 100 for dark backgrounds */
+  --color-secondary-100: #875200; /* Dark gold reference */
+
+  /* ============= SURFACE & NEUTRAL SYSTEM (DARK) ============= */
+  --color-surface: #1a1a2b; /* Dark surface */
+  --color-surface-container: #2d2d3d; /* Dark card background */
+  --color-outline: #9a99a5; /* Light outline for dark mode */
+  --color-outline-variant: #49484f; /* Subtle dividers - dark */
+
+  /* ============= FUNCTIONAL COLORS (DARK) ============= */
+  --color-success: #66bb6a; /* Adjusted success for dark mode */
+  --color-error: #ff6b6b; /* Adjusted error for dark mode */
+  --color-warning: #ffa726; /* Adjusted warning for dark mode */
+  --color-tertiary: #9fa3d2; /* Adjusted tertiary for dark mode */
+  --color-info: #90caf9; /* Adjusted info for dark mode */
+
+  /* ============= TEXT HIERARCHY (DARK) ============= */
+  --color-text-primary: #f0f4f9; /* Light text - Primary 50 */
+  --color-text-secondary: #b0adb9; /* Secondary text - lighter */
+  --color-text-muted: #8a8792; /* Muted text */
+
+  /* ============= BACKGROUNDS (DARK) ============= */
+  --color-bg: #0f1419; /* Very dark background */
+  --color-card: #1a1a2b; /* Dark card background */
+
+  /* ============= BORDERS (DARK) ============= */
+  --color-border: #49484f; /* Dark borders */
+
+  /* ============= BUTTON COLORS (DARK) ============= */
+  --color-button-primary: #a8d5ff; /* Light blue button - dark mode */
+  --color-button-primary-hover: #7fb3e8; /* Hover state */
+  --color-button-primary-text: #002045; /* Dark text on light button */
+  --color-button-primary-border: #7fb3e8;
+
+  --color-button-secondary: #ffb366; /* Light gold button - dark mode */
+  --color-button-secondary-hover: #ff9844; /* Hover state */
+  --color-button-secondary-text: #1a1a2b; /* Dark text on light button */
+  --color-button-secondary-border: #ffb366;
+
+  /* ============= ACTIVE/FOCUS STATES (DARK) ============= */
+  --color-link-active: #a8d5ff; /* Active links - light blue */
+}
+
+@layer components {
+  .btn {
+    @apply bg-button-primary text-button-primary-text px-4 py-2 rounded-lg transition-colors hover:bg-button-primary-hover;
+  }
+}
